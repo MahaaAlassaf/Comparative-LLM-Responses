@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Streaming Client</title>
+    <link rel="stylesheet" href="mdb.dark.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="heading">RAG Streaming Client</h1>
+
+    <div id="message-output">
+      <div class="messages-output-box">
+        <h3>GPT-4</h3>
+        <div id="messages-gpt-4" class="messages"></div>
+      </div>
+      <div class="messages-output-box">
+        <h3>GPT-3</h3>
+        <div id="messages-gpt-3" class="messages"></div>
+      </div>
+      <div class="messages-output-box">
+        <h3>Llama-2-70b</h3>
+        <div id="messages-llama" class="messages"></div>
+      </div>
+      <div class="messages-output-box">
+        <h3>Falcon-40b-instruct</h3>
+        <div id="messages-falcon" class="messages"></div>
+      </div>
+    </div>
+    <div class="form">
+      <input type="text" id="message-box" placeholder="Type your query here" 
+        class="form-control form-control-lg"
+      />
+      <button id="sendButton" class="
+        btn btn-primary btn-lg btn-block
+        justify-content-center align-items-center
+      ">Send</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
